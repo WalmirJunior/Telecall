@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Prompt', monospace;
+}
+.CadLog{
+    background: url(img/bg.png) top center/100% no-repeat #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containerCL img{
+    width: 13vh;
+    align-items:center;
+    position: relative;    
+}
+
+.containerCL .inputs-l input{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #EB0008;
+    border-color: #B81E23;
+}
+
+.inputs-l a{
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background:linear-gradient(to right, #EB0008, #B81E23);
+    border-radius: 4px;
+    padding: 1rem;
+    width: 50%;    
+    text-decoration: none;
+    text-align: center;
+    
+}
+.inputs-l a:hover{
+    background:linear-gradient(to left,  #EB0008, #B81E23);
+}
+
+
+
+/* pagina main */
+
+
+/* menu */
+
+
+.mainBody header{
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.dropdown-menu{
+    position: absolute;   
+    box-shadow: 0 0 2px black;
+    display: none;
+        
+}
+
+.dropdown-menu a{
+    display: block;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;    
+}
+
+
+/* Carrossel */
+
+.container-slider{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+.slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.on{
+    opacity: 1;
+}
+#prev-button, #next-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 69, 69);
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/* cores bootstrap */
+
+
+/* estilização do login2 */
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.card{
+    background-color: #ffffff90;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;    
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    color: #590415;
+}
+.CadLog .container .label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #590415;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+.label-float label{
+    color: white;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #590415;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition: all .5s ease-out;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #590415;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.container p{
+    color: #590415;
+}
+.container a{
+    text-decoration: none;
+    transition: all .4s ease-out;
+}
+.container a:hover{
+    text-decoration: underline;
+    color: #590415;
+}
+.containerCL{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.CadLog .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.container .cardCD .grupos .label-float .datanasc{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom:5%;
+    color: white;
+}
+
+.cardCD{
+    background-color: #ffffff90;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 100vh;
+}
+.cardCD .grupos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-float .datanasc:focus{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom:5%;
+    color: #590415;
+}
+
+
+#msgError{
+    text-align: center;
+    color: red;
+    padding: 10px;
+    display: none;
+}
+#msgSuccess{
+    text-align: center;
+    color: green;
+    padding: 10px;
+    display: none;
+}
+
+body.dark{
+    background: #232c35;
+    color: white;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5) translateY(-50%);
+    top: 80%; 
+    right: 0;
+    
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
+  .accessibility-panel {
+    position: fixed;
+    bottom: 30%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-panel button {
+    margin-bottom: 2px;
+    border: none;
+    color: black;
+}
